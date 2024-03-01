@@ -25,6 +25,14 @@ Rails.application.routes.draw do
     end
 
     resources :columns
+
+    resources :sfas do
+      resources :progresses
+      collection do
+        post :confirm
+        post :thanks
+      end
+    end
     
     get 'lp' => 'tops#lp'
 
