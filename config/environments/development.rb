@@ -6,11 +6,11 @@ Rails.application.configure do
   # ActionMailer::Base.delivery_method = :letter_opener_web
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
-  address: 'smtp3.gmoserver.jp',
+  address: 'smtp.lolipop.jp',
   domain: 'sale-s.pro',
   port: 587,
   user_name: 'info@sale-s.pro',
-  password: 'yL4meV#3333',
+  password: '4_6St34vn-x-z_V_',
   authentication: 'plain',
   enable_starttls_auto: true
   }
