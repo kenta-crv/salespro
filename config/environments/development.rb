@@ -10,7 +10,7 @@ Rails.application.configure do
   domain: 'sale-s.pro',
   port: 587,
   user_name: 'info@sale-s.pro',
-  password: '4_6St34vn-x-z_V_',
+  password: ENV['EMAIL_PASSWORD'],
   authentication: 'plain',
   enable_starttls_auto: true
   }
