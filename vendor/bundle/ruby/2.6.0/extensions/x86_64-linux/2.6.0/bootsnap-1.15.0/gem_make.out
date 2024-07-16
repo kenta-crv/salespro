@@ -1,0 +1,38 @@
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.15.0/ext/bootsnap
+/home/smart/.anyenv/envs/rbenv/versions/2.6.1/bin/ruby -I /home/smart/.anyenv/envs/rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 extconf.rb
+Ignoring bootsnap-1.15.0 because its extensions are not built. Try: gem pristine bootsnap --version 1.15.0
+Ignoring date-3.3.1 because its extensions are not built. Try: gem pristine date --version 3.3.1
+Ignoring ffi-1.15.5 because its extensions are not built. Try: gem pristine ffi --version 1.15.5
+Ignoring nio4r-2.5.8 because its extensions are not built. Try: gem pristine nio4r --version 2.5.8
+Ignoring racc-1.6.1 because its extensions are not built. Try: gem pristine racc --version 1.6.1
+Ignoring rmagick-5.3.0 because its extensions are not built. Try: gem pristine rmagick --version 5.3.0
+Ignoring sassc-2.4.0 because its extensions are not built. Try: gem pristine sassc --version 2.4.0
+Ignoring websocket-driver-0.7.5 because its extensions are not built. Try: gem pristine websocket-driver --version 0.7.5
+creating Makefile
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.15.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1592mcj sitelibdir\=./.gem.20240128-23578-1592mcj clean
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.15.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1592mcj sitelibdir\=./.gem.20240128-23578-1592mcj
+compiling bootsnap.c
+bootsnap.c: In function ‘bs_rb_fetch’:
+bootsnap.c:323:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  323 |   char * cachedir = RSTRING_PTR(cachedir_v);
+      |   ^~~~
+bootsnap.c: In function ‘bs_rb_precompile’:
+bootsnap.c:350:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  350 |   char * cachedir = RSTRING_PTR(cachedir_v);
+      |   ^~~~
+bootsnap.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.15.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1592mcj sitelibdir\=./.gem.20240128-23578-1592mcj install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20240128-23578-1592mcj/bootsnap
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.15.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1592mcj sitelibdir\=./.gem.20240128-23578-1592mcj clean

@@ -1,0 +1,27 @@
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/home/smart/.anyenv/envs/rbenv/versions/2.6.1/bin/ruby -I /home/smart/.anyenv/envs/rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 extconf.rb
+Ignoring bootsnap-1.15.0 because its extensions are not built. Try: gem pristine bootsnap --version 1.15.0
+Ignoring date-3.3.1 because its extensions are not built. Try: gem pristine date --version 3.3.1
+Ignoring ffi-1.15.5 because its extensions are not built. Try: gem pristine ffi --version 1.15.5
+Ignoring msgpack-1.6.0 because its extensions are not built. Try: gem pristine msgpack --version 1.6.0
+Ignoring nio4r-2.5.8 because its extensions are not built. Try: gem pristine nio4r --version 2.5.8
+Ignoring racc-1.6.1 because its extensions are not built. Try: gem pristine racc --version 1.6.1
+Ignoring rmagick-5.3.0 because its extensions are not built. Try: gem pristine rmagick --version 5.3.0
+Ignoring sassc-2.4.0 because its extensions are not built. Try: gem pristine sassc --version 2.4.0
+Ignoring websocket-driver-0.7.5 because its extensions are not built. Try: gem pristine websocket-driver --version 0.7.5
+creating Makefile
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1nz5hza sitelibdir\=./.gem.20240128-23578-1nz5hza clean
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1nz5hza sitelibdir\=./.gem.20240128-23578-1nz5hza
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1nz5hza sitelibdir\=./.gem.20240128-23578-1nz5hza install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20240128-23578-1nz5hza
+
+current directory: /opt/webroot/carelink/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240128-23578-1nz5hza sitelibdir\=./.gem.20240128-23578-1nz5hza clean
