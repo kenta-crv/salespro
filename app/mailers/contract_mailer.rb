@@ -3,6 +3,7 @@ class ContractMailer < ActionMailer::Base
   def received_email(contract)
     @contract = contract
     mail to: "info@sale-s.pro"
+    mail cc: "kamon@ri-plus.jp"
     mail(subject: '株式会社セールスプロにお問い合わせがありました') do |format|
       format.text
     end
