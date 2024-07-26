@@ -1,6 +1,5 @@
 class ContractsController < ApplicationController
-    before_action :authenticate_admin!, only: [:index, :show, :edit, :update, :destroy, :send_mail]
-  
+  before_action :authenticate_admin!, only: [:index, :destroy, :send_mail]  
     def index
       @contracts = Contract.order(created_at: "DESC").page(params[:page])
     end
