@@ -7,4 +7,7 @@ class TopsController < ApplicationController
 
     def thanks
     end
+
+    def download
+    end
 end

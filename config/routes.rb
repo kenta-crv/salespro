@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :admins, only: [:show]
 
     root to: 'tops#index' #トップページ
+    get 'download' => 'tops#download' #事務資料ダウンロード
     
     resources :contracts do
       resource :comments
@@ -35,7 +36,7 @@ Rails.application.routes.draw do
         post :thanks
       end
     end
-    
+
     get 'lp' => 'tops#lp'
 
     #get '*path', controller: 'application', action: 'render_404'
