@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.post_install_message = "\nYou have installed oauth version 1.1.0, congratulations!\n\nNon-commercial support for the 1.x series will end by April, 2025. Please make a plan to upgrade to the next version prior to that date.\nThe only breaking change will be dropped support for Ruby 2.7 and any other versions which will also have reached EOL by then.\n\nPlease see:\n\u2022 https://github.com/oauth-xx/oauth-ruby/blob/main/SECURITY.md\n\nNote also that I am, and this project is, in the process of leaving Github.\nI wrote about some of the reasons here:\n\u2022 https://dev.to/galtzo/im-leaving-github-50ba\n\nIf you are a human, please consider a donation as I move toward supporting myself with Open Source work:\n\u2022 https://liberapay.com/pboling\n\u2022 https://ko-fi.com/pboling\n\u2022 https://patreon.com/galtzo\n\nIf you are a corporation, please consider supporting this project, and open source work generally, with a TideLift subscription.\n\u2022 https://tidelift.com/funding/github/rubygems/oauth\n\u2022 Or hire me. I am looking for a job!\n\nPlease report issues, and support the project!\n\nThanks, |7eter l-|. l3oling\n".freeze
   s.required_ruby_version = Gem::Requirement.new(">= 2.7".freeze)
-  s.rubygems_version = "3.3.5".freeze
+  s.rubygems_version = "3.1.6".freeze
   s.summary = "OAuth Core Ruby implementation".freeze
 
-  s.installed_by_version = "3.3.5" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.1.6" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

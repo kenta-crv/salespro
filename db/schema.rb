@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_07_15_092902) do
+ActiveRecord::Schema.define(version: 2024_11_14_100720) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -130,6 +130,11 @@ ActiveRecord::Schema.define(version: 2024_07_15_092902) do
     t.string "contract_date"
     t.string "unit_price"
     t.string "refund"
+    t.string "payment"
+    t.string "salary"
+    t.string "employment_conditions"
+    t.string "document_screening"
+    t.string "conversion"
   end
 
   create_table "estimates", force: :cascade do |t|

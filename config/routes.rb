@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
     root to: 'tops#index' #トップページ
     get 'download' => 'tops#download' #事務資料ダウンロード
+    get 'lp' => 'tops#lp' #事務資料ダウンロード
     
     resources :contracts do
       resource :comments

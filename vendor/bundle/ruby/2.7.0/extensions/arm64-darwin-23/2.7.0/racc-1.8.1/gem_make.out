@@ -1,0 +1,15 @@
+current directory: /Users/okuyamakenta/Program/salespro/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/okuyamakenta/.rbenv/versions/2.7.3/bin/ruby -I /Users/okuyamakenta/.rbenv/versions/2.7.3/lib/ruby/2.7.0 -r ./siteconf20241114-71964-wmze30.rb extconf.rb
+creating Makefile
+
+current directory: /Users/okuyamakenta/Program/salespro/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/okuyamakenta/Program/salespro/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/okuyamakenta/Program/salespro/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+make "DESTDIR=" install
+/opt/homebrew/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20241114-71964-1ssc7wy/racc
