@@ -6,6 +6,7 @@ class ContractsController < ApplicationController
   
     def new
       @contract = Contract.new
+      biding.pry
     end
   
     def confirm
@@ -107,6 +108,7 @@ class ContractsController < ApplicationController
         :contract_date,
         :unit_price,
         :refund, 
+        source_id
       )
     end
 end
