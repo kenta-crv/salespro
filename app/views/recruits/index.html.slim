@@ -1,0 +1,62 @@
+br/
+br/
+.category-wrapper
+ - @recruits.each do |recruit|
+  .job-card
+    h3 recruit.title
+    p = recruit.work_contents
+    .row
+      .col-sm-6
+        p
+          strong 報酬:
+          = recruit.salary
+      .col-sm-6
+        p
+          strong 募集職種:
+          = recruit.genre
+    
+    .row
+      .col-sm-6
+        p
+          strong 勤務時間:
+          = recruit.work_time
+      .col-sm-6
+        p
+          strong 休日:
+          = recruit.day_off
+    
+    .row
+      .col-sm-6
+        p
+          strong 契約形態:
+          = recruit.employment
+      .col-sm-6
+        p
+          strong 勤務地:
+          = recruit.address
+    
+    .row
+      .col-sm-6
+        p
+          strong 研修期間:
+          = recruit.traning
+      .col-sm-6
+        p
+          strong 研修給料:
+          = recruit.traning_salary
+    
+    .row
+      .col-sm-6
+        p
+          strong 勤務可能なビザ:
+          = recruit.visa
+      .col-sm-6
+        p
+          strong 必要な資格:
+          = recruit.qualification
+    
+    .row
+      .col-sm-12
+        p
+          strong その他:
+          = recruit.other

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_11_14_100720) do
+ActiveRecord::Schema.define(version: 2025_09_27_191959) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -187,6 +187,25 @@ ActiveRecord::Schema.define(version: 2024_11_14_100720) do
     t.datetime "updated_at", null: false
     t.integer "sfa_id"
     t.index ["contract_id"], name: "index_progresses_on_contract_id"
+  end
+
+  create_table "recruits", force: :cascade do |t|
+    t.string "title"
+    t.string "work_contents"
+    t.string "salary"
+    t.string "genre"
+    t.string "work_time"
+    t.string "work_time_total"
+    t.string "day_off"
+    t.string "address"
+    t.string "traning"
+    t.string "qualification"
+    t.string "other"
+    t.string "employment"
+    t.string "visa"
+    t.string "traning_salary"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "sfas", force: :cascade do |t|

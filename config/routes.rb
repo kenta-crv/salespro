@@ -7,8 +7,10 @@ Rails.application.routes.draw do
     resources :admins, only: [:show]
 
     root to: 'tops#index' #トップページ
-    get 'download' => 'tops#download' #事務資料ダウンロード
-    get 'lp' => 'tops#lp' #事務資料ダウンロード
+    get 'cargo' => 'tops#cargo'
+    get 'security' => 'tops#security'
+    #get 'download' => 'tops#download' #事務資料ダウンロード
+    #get 'lp' => 'tops#lp' #事務資料ダウンロード
     
     resources :contracts do
       resource :comments
@@ -37,6 +39,8 @@ Rails.application.routes.draw do
         post :thanks
       end
     end
+
+    resources :recruits
 
     get 'lp' => 'tops#lp'
 

@@ -2,12 +2,14 @@ class TopsController < ApplicationController
     def index
     end
 
-    def lp 
+    def cargo 
+    end
+
+    def security 
     end
 
     def thanks
     end
 
-    def download
-    end
+
 end

@@ -1,0 +1,91 @@
+= form_for @recruit do |f|
+  - if @recruit.errors.any?
+   .alert.alert-warning.center
+     ul
+       - @recruit.errors.full_messages.each do |message|
+        li
+          = message
+
+  .company-wrapper
+  table.company.responsive-table
+      colgroup
+        col.col-1
+        col.col-2
+        col.col-3
+      tr
+        td.arrow-box-cell
+          | タイトル
+        td.responsive-cell[colspan="3"]
+         .input-container
+          = f.text_field :title
+      tr
+        td.arrow-box-cell
+          | 詳細
+        td.responsive-cell[colspan="3"]
+         .input-container
+          = f.text_area :work_contents
+      tr
+        td.arrow-box-cell
+          | 報酬
+        td.responsive-cell
+         .input-container
+          = f.text_field :salary
+        td.arrow-box-cell
+          | 募集職種
+        td.responsive-cell
+         .input-container
+          = f.text_field :genre
+      tr
+        td.arrow-box-cell
+          | 勤務時間
+        td.responsive-cell
+         .input-container
+          = f.text_field :work_time
+        td.arrow-box-cell
+          | 休日
+        td.responsive-cell
+         .input-container
+          = f.text_field :day_off
+      tr
+        td.arrow-box-cell
+          | 契約形態
+        td.responsive-cell
+         .input-container
+          = f.text_field :employment
+        td.arrow-box-cell
+          | 勤務地
+        td.responsive-cell
+         .input-container
+          = f.text_field :address
+      tr
+        td.arrow-box-cell
+          | 研修期間
+        td.responsive-cell
+         .input-container
+          = f.text_field :traning
+        td.arrow-box-cell
+          | 研修給料
+        td.responsive-cell
+         .input-container
+          = f.text_field :traning_salary
+      tr
+        td.arrow-box-cell
+          | 勤務可能なビザ
+        td.responsive-cell
+         .input-container
+          = f.text_field :visa
+        td.arrow-box-cell
+          | 必要な資格
+        td.responsive-cell
+         .input-container
+          = f.text_field :qualification
+      tr
+        td.arrow-box-cell
+          | その他
+        td.responsive-cell[colspan="3"]
+         .input-container
+          = f.text_area :other
+      tr
+        td colspan="4"
+         .center
+          = f.submit "登録する", class: "btn btn-primary"
