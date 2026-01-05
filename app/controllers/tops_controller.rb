@@ -8,6 +8,9 @@ class TopsController < ApplicationController
     def security 
     end
 
+    def information
+    end
+
     def thanks
     end
 

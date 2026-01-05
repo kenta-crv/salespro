@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     root to: 'tops#index' #トップページ
     get 'cargo' => 'tops#cargo'
     get 'security' => 'tops#security'
+    get 'information' => 'top#information' #社外周知
     #get 'download' => 'tops#download' #事務資料ダウンロード
     #get 'lp' => 'tops#lp' #事務資料ダウンロード
     
